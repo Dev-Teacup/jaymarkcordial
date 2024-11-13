@@ -1,0 +1,175 @@
+body {
+    background-image: url('Background.jpg');
+    background-size: cover; /* makes the image cover the entire screen */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-attachment: fixed; /* keeps the image in place on scroll */
+  }
+  
+
+.wheel {
+    width: 55vw;
+    height: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 50px;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: wheel;
+    animation-duration: 20s;
+    border: 2px solid black;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .hub {
+  width: 10vw; /* adjust the size as needed */
+  height: 10vw;
+  max-width: 50px;
+  max-height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+  .line {
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    transform-origin: 0% 0%;
+    background-color: black;
+  }
+  
+  .line:nth-of-type(2) {
+    transform: rotate(60deg);
+  }
+  
+  .line:nth-of-type(3) {
+    transform: rotate(120deg);
+  }
+  
+  .line:nth-of-type(4) {
+    transform: rotate(180deg);
+  }
+  
+  .line:nth-of-type(5) {
+    transform: rotate(240deg);
+  }
+  
+  .line:nth-of-type(6) {
+    transform: rotate(300deg);
+  }
+  
+  .cabin {
+    width: 22%;
+    height: 22%;
+    border: 2px solid;
+    position: absolute;
+    border-radius: 50px;
+    background-color: red;
+    transform-origin: 50% 0%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 200%;
+    animation: cabins 19s ease-in-out infinite;
+  }
+  
+  .cabin:nth-of-type(1) {
+    top: 50%;
+    right: -11.5%;
+  }
+  
+  .cabin:nth-of-type(2) {
+    right: 13%;
+    top: 92.5%;
+  }
+  
+  .cabin:nth-of-type(3) {
+    right: 64%;
+    top: 93.5%;
+  }
+  
+  .cabin:nth-of-type(4) {
+    top: 50%;
+    left: -8.5%;
+  }
+  
+  .cabin:nth-of-type(5) {
+    top: 5%;
+    left: 19%;
+  }
+  
+  .cabin:nth-of-type(6) {
+    top: 7%;
+    right: 17%;
+    
+  }
+  
+  @keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes cabins {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      background-color: yellow;
+    }
+  
+    50% {
+      background-color: purple;
+    }
+  
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .hub {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+#note {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 100;
+    right: 0; /* Change from left: 0 to right: 0 */
+    width: 50%;
+    height: 20%;
+    padding: 10px;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: #000000; /* Optional, for visibility */
+}
+
+hub {
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ferris Wheel</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <div class="wheel">
+    
+    <!----- Line Divs ----->
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    
+    <!----- Cabin Divs ----->
+    <div class="cabin" onclick="showNote(1)">1</div>
+    <div class="cabin" onclick="showNote(2)">2</div>
+    <div class="cabin" onclick="showNote(3)">3</div>
+    <div class="cabin" onclick="showNote(4)">4</div>
+    <div class="cabin" onclick="showNote(5)">5</div>
+    <div class="cabin" onclick="showNote(6)">6</div>
+
+    <div class="hub"></div>
+  </div>
+  <div id="note">Click a pod to see a note!</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

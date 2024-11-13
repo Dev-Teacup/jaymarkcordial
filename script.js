@@ -1,0 +1,14 @@
+// Notes to display when each pod is clicked
+const notes = [
+    "When I was about four years old, I remember one evening when my mom told me to put my toys away before dinner. I didn't fully understand why, but I knew that if I didn’t, I'd get scolded or even lose playtime. So, I quickly gathered up my blocks and cars, not really because I wanted to, but because I was afraid of the consequences.",
+    "In kindergarten, our teacher had a rule: if we shared our toys with others, we could pick a special treat from her candy jar at the end of the day. I loved the little chocolate squares she kept in that jar, so every day, I made sure to share my crayons and building blocks with my classmates. It felt good to share, but what really made me do it was knowing I'd get that treat in the end.",
+    "By the time I was in third grade, I really wanted to impress my teacher, Ms. Reyes. She would often compliment kids who helped others, saying they were good role models. One day, I noticed a classmate struggling with their math assignment, so I went over to offer some help. I wasn’t just helping for the sake of it—I wanted Ms. Reyes to notice and maybe tell my parents that I was being a good student.",
+    "When I got to middle school, our teacher announced that copying on tests was absolutely against school rules. During a big science test, I saw a friend trying to glance at my paper. I knew they might be stuck, but I also knew it was important to follow the rules, so I covered my answers. I felt a strong sense of responsibility to respect the school’s policy, even if it meant my friend might be disappointed in me.",
+    "In high school, I was part of a group project where some classmates were less involved, and our teacher didn’t seem to notice. I felt it was unfair that the same few people were doing all the work while others got equal credit. So, I raised the issue with our teacher, explaining that it would be more fair if everyone contributed equally. I wanted to stand up for a system that rewarded fairness, even though it could’ve made some classmates upset with me.",
+    "In college, a group of friends planned a prank targeting a classmate they thought was too serious. I could see the prank might embarrass or hurt them, even if others thought it was all in good fun. I told my friends I wouldnt participate, explaining that it felt wrong to single someone out like that, even for a laugh. Standing by my values meant a lot to me, and I knew I had to follow my own principles, even if they didn’t understand."
+];
+
+function showNote(podNumber) {
+    // Display the corresponding note based on pod number
+    document.getElementById("note").innerText = notes[podNumber - 1];
+}
